@@ -17,10 +17,12 @@
     "jsx": "react-jsx",
     "baseUrl": "./src",
     "paths": {
-      "@templateComponents/*": ["./app/components/templateComponents/*"],
-      "@appComponent/*": ["./app/components/appComponents/*"],
+      "@app": ["./app"],
+      "@templates": ["./templates"],
       "@contexts/*": ["./app/contexts/*"],
-      "@templates/*": ["./templates/*"]
+      "@pages/*": ["./app/pages/*"],
+      "@app_components/*": ["./app/components/*"],
+      "@templates_components/*": ["./templates/_components/*"]
     }
   },
   "include": ["src"],

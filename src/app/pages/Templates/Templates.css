@@ -1,0 +1,131 @@
+.template-header {
+  z-index: 2;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  backdrop-filter: blur(10px);
+  box-sizing: border-box;
+  background: #ffffff0d;
+  box-shadow: 0 15px 35px #00000080;
+}
+
+.template-header .header-title {
+  font-size: 20px;
+  margin: 0px;
+}
+
+.template-header .header-search {
+  line-height: 30px;
+  padding: 5px 15px;
+  border-radius: 8px;
+  border: 0px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.template-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.template-content .card {
+  position: relative;
+  width: 300px;
+  height: 320px;
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.template-content .card .card-content {
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+
+.template-content .card:hover .card-content {
+  transform: translateY(-20px);
+}
+
+.template-content .card:hover .card-actions {
+  bottom: 20px;
+}
+
+.template-content .card .card-content .card-icon-box {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.template-content .card .card-content .card-icon-box .card-icon {
+  max-width: 150px;
+}
+
+.template-content .card .card-content .card-title {
+  text-align: center;
+}
+
+.template-content .card .card-content .description {
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.template-content .card .card-actions {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: absolute;
+  bottom: -35px;
+  transition: 0.5s;
+}
+
+.template-content .card .card-actions .card-btn {
+  background-color: #cbd4fb;
+  color: #4246af;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 0px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 600px) {
+  .template-header .header-title {
+    font-size: 25px;
+  }
+
+  .template-header .header-search {
+    margin-top: 0px;
+    min-width: 200px;
+    width: auto;
+  }
+}
